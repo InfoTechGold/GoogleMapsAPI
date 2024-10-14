@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google Maps</title>
+	<style type="text/css" rel="stylesheet">
+		
+		*{
+
+			/*resetando os valores padrões do site*/
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			/*dando uma cor preta para o corpo do body*/
+			background-color: black;
+		}
+		h2{
+			/*estilizando o titulo google maps no nosso conteúdo html*/
+			text-align: center;
+			color: white;
+			font-size: 50px;
+		}
+		.container{
+
+			/*estilizando o container dando uma altura,largura e cor cinza*/
+			padding-top: 24px;
+			width: 100%;
+			height: 560px;
+			background-color: gray;
+			margin-top: 20px;
+		}
+		.mapa{
+			/* estilizando o mapa em si dando altura,largura e uma cor branca*/
+			width: 98%;
+			height: 96%;
+			background-color: white;
+			margin:auto;
+
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Google Maps</h2> <!--titulo do nosso conteúdo-->
+<div class="container"><!--div container onde vai ficar o mapa-->
+		<div class="mapa" id="mapa"></div><!--div mapa onde vai ficar o mapa desenhado da api-->
+	</div>
+
+
+
+ <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8FLP4NM4aV1WQ_RDXQR4Txgu9jQNs1pI&"></script>
+    <script type="text/javascript" src="function.js"></script><!--importando a api do google maps-->
+</body>
+</html>
